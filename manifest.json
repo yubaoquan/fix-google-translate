@@ -1,0 +1,20 @@
+{
+  "name": "Fix google translate",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Fix the position bug of google translate extension.",
+  "icons": {
+      "16": "16.png",
+      "48": "48.png",
+      "128": "128.png"
+  },
+  "content_scripts": [
+   {
+     "matches": [
+       "http://*/*",
+       "https://*/*"
+       ],
+     "js": ["myscript.js"]
+   }
+ ]
+}
